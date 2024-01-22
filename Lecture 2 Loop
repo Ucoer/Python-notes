@@ -76,3 +76,67 @@ while True:
     
 for _ in range(n):
     print("meow")
+
+####
+something missing
+
+###
+for _ in range (3):
+    print("#")
+
+#same
+#print # in 3 rows, print will automatically go to next row
+def main():
+    print_column(3)
+    
+def print_column(height):
+    for _ in range(height):
+        print("#")
+        
+main()
+
+###
+#print in 4 columns, as print ends at "", so the next "#" comes after
+for _ in range(4):
+    print("#", end="")
+
+#same
+def main():
+    print_row(4)
+    
+    
+def print_row(width):
+    print("?"*width)
+    
+main()
+
+####print square
+def main():
+    print_square()
+    
+    
+def print_square():
+    #print 3 rows
+    for i in range(3):
+        #print 5 bricks in each row
+        for j in range(5):
+            print("#", end="")
+        #start a new row to finish 3 rows, like \n
+        print()
+    
+main()
+
+##same
+def main():
+    print_square()
+    
+    
+def print_square():
+    #the for loop is to print 3 rows
+    for i in range(3):
+        #the inside * is to print 4 bricks in each row
+        print("#"*4)
+    
+main()
+
+
